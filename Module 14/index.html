@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+
+    <!-- daisyUI 4.12.10 CSS file + Tailwind CSS CDN script: -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0f9d7db8b4.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'p-color' : '#777777',
+                        'rating' : '#FFC850',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-white text-black font-manrope">
+    <header>
+        <div class="container mx-auto">
+            <div class="hero">
+                <div class="hero-content flex-col lg:flex-row">
+            
+                  <div>
+                    <h1 class="text-3xl lg:text-7xl font-bold">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 text-p-color">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button class="btn border-0 text-white bg-gradient-to-l from-[#FF0000] to-[#FF8938]">Explore More <span><i class="fa-solid fa-arrow-turn-up"></i></span></button>
+                  </div>
+
+                  <div class="">
+                    <img
+                    src="resource/images/banner.png"
+                    class="max-w-sm" />
+                    <!-- rating badge  -->
+                    <div class="-mt-20 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+                        <i class="fa-solid fa-star text-4xl text-amber-400"></i>
+                        <div>
+                            <h3>5.00</h3>
+                            <p>Trus Pilor Rating</p>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-10">
+        <!-- feature section  -->
+         <section class="text-center">
+            <h1 class="text-5xl font-extrabold">Our Featured Products</h1>
+            <p class="text-p-color mt-4">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+            </p>
+            <div class="grid grid-row-4 gap-4">
+                <!-- first card  -->
+                <div class="card shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Milk Tea</h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+                <!-- second card  -->
+                <div class="card shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Black Tea</h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                  </div>
+                <!-- third card  -->
+                <div class="card shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Lemon Tea</h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                  </div>
+                <!-- fourth card  -->
+                <div class="card shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Green Tea</h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                  </div>
+            </div>
+         </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
