@@ -72,7 +72,7 @@
     </div>
   </header>
 
-  <main class="container mx-auto mb-40">
+  <main class="container mx-auto mb-20">
     <!-- feature section  -->
     <section class="text-center my-10">
       <h1 class="text-3xl lg:text-5xl font-extrabold">Our Featured Products</h1>
@@ -149,7 +149,7 @@
         <p>
           A Unique and different style from other teapots gives a luxurious and minimalist impression
         </p>
-        <h3 class="text-xl font-extrabold">Premium Quality</h3>
+        <h3 class="text-xl font-extrabold mt-8">Premium Quality</h3>
         <p>
           Premium Quality that makes tea more elegant and more durable when you use it.
         </p>
@@ -157,10 +157,10 @@
     </section>
 
     <!-- super client section  -->
-    <section class="flex flex-col lg:flex-row bg-gradient-to-r from-[#FF0000] to-[#FF8938] rounded-lg px-20 py-24 ">
+    <section class="flex flex-col lg:flex-row bg-gradient-to-r from-[#FF0000] to-[#FF8938] rounded-lg px-20 my-20 py-24">
       <div class="flex items-center pr-32 text-white">
         <div class="space-y-12">
-          <h2 class="text-5xl font-extrabold">Meet Our Super <br> Clients</h2>
+          <h2 class="text-3xl lg:text-5xl font-extrabold">Meet Our Super <br> Clients</h2>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
             in
             some form, by injected humour, or randomised words which don't look even slightly believable. </p>
@@ -209,14 +209,74 @@
 
     </section>
 
+    <!-- news and events section  -->
+    <section class="my-10 mx-auto">
+      <h3 class="text-5xl font-extrabold text-center">News & Events</h3>
+      <p class="mt-4 lg:max-w-4xl mx-auto text-center text-p-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
 
+      <div class="m-10 flex gap-10 flex-col lg:flex-row">
+        <!-- first card  -->
+        <div class="card card-compact border">
+          <figure>
+            <img
+              src="resource/images/news-1.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <p class="text-p-color">Feb 05, 2027</p>
+            <h2 class="card-title text-sm font-extrabold">Collecting 8 points for <br> discount</h2>
+            <p class="text-p-color">There are many variations of passages of Lorem Ipsum available.</p>
+            <div class="card-actions">
+              <button class="font-extrabold">learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- second card  -->
+        <div class="card card-compact border">
+          <figure>
+            <img
+              src="resource/images/news-1.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <p class="text-p-color">Feb 05, 2027</p>
+            <h2 class="card-title text-sm font-extrabold">Collecting 8 points for <br> discount</h2>
+            <p class="text-p-color">There are many variations of passages of Lorem Ipsum available.</p>
+            <div class="card-actions">
+              <button class="font-extrabold">learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- third card  -->
+        <div class="card card-compact border">
+          <figure>
+            <img
+              src="resource/images/news-1.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <p class="text-p-color">Feb 05, 2027</p>
+            <h2 class="card-title text-sm font-extrabold">Collecting 8 points for <br> discount</h2>
+            <p class="text-p-color">There are many variations of passages of Lorem Ipsum available.</p>
+            <div class="card-actions">
+              <button class="font-extrabold">learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="text-white p-10 bg-black">
-    <div>
-      
+  <footer class="text-white px-4 lg:px-48 py-10 bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="flex justify-between flex-col lg:flex-row">
+      <img src="resource/images/cup.png" class="h-16 w-16" alt="">
+      <p>
+        <span>Ready to get strated?</span>
+        <button class="btn border-0 text-white bg-gradient-to-l from-[#FF0000] to-[#FF8938] ml-4"> Get Started</button>
+      </p>
     </div>
-    <div class="footer">
+
+    <div class="footer pt-9">
       <nav>
         <h6 class="footer-title">Services</h6>
         <a class="link link-hover">Branding</a>
@@ -239,21 +299,23 @@
       </nav>
       <form>
         <h6 class="footer-title">Newsletter</h6>
-        <fieldset class="form-control w-80">
+        <fieldset class="form-control">
           <label class="label">
-            <span class="label-text">Enter your email address</span>
+            <span class="label-text text-white font-semibold">Subscribe to our <br> newsletter</span>
           </label>
-          <div class="join">
-            <input type="text" placeholder="username@site.com" class="input input-bordered join-item" />
-            <button class="btn btn-primary join-item">Subscribe</button>
-          </div>
+          <div class="relative">
+            <input type="text" placeholder="username@site.com" class="py-4 px-2 bg-transparent border-b-2 text-white  border-black outline-none placeholder-white" />
+            <button class="btn border-0  absolute top-0 -right-10 rounded-full bg-gradient-to-l text-white from-[#FF0000] to-[#FF8938]">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
         </fieldset>
       </form>
     </div>
 
-    <div>
+    <div class="mt-10 text-center">
       <aside>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+        <p>© 2024 <a href="https://github.com/shahoraiar">shahoraiar</a> - All rights reserved.</p>
       </aside>
     </div>
   </footer>
