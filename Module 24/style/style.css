@@ -1,0 +1,9 @@
+h1 {
+    color: lightcoral;
+}
+
+#places-container, #blog-section, #food-section{
+    border: 1px solid rebeccapurple;
+    margin-bottom: 20px;
+    padding: 20px;
+}
