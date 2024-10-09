@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summary</title>
+    <script src="js/event_summary.js"></script>
+</head>
+<body>
+    <h1>Final DOM event handlers</h1>
+    <h3 id="handler-status">Change Text by click Onclick Function</h3>
+
+    <button onclick="handleOnClick()">Onclick Funciton</button>
+
+    <!-- form text  -->
+     <h1>this is the form , if you submit any letter may change the Default input text</h1>
+     <h3 id="change-Text">Default input text</h3>
+     <input id="input-text" type="text">
+     <button id="input-button">submit</button>
+
+    <script>
+        function handleOnClick(){
+            console.log('button clicked');
+            const handerStatus = document.getElementById('handler-status');
+            handerStatus.innerText = 'after click onclick function';
+        }
+
+        // form text 
+        document.getElementById('input-button').addEventListener('click', function(){
+            console.log('update, button');
+            const inputField = document.getElementById('input-text');
+            // console.log(inputField);
+            const inputText = inputField.value;
+            console.log(inputText)
+
+            const h3Text = document.getElementById('change-Text');
+            h3Text.innerText = inputText;
+            inputField.value = '';
+        })
+    </script>
+</body>
+</html>

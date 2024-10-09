@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events</title>
+</head>
+<body>
+    <h1>Today we Familier with js EVENTS</h1>
+
+    <button onclick="makeYellow()">Make Yellow</button>
+    <button onclick="makeRed()">Make Red</button>
+    <button onclick="makeGreen()">Make Green</button>
+    <button id="make-blue">Make Blue</button>
+    <button id="make-golderrod">Make Godenrod</button>
+    
+
+    <script src="js/events.js"></script>
+    <script>
+        const makeBlueButton = document.getElementById('make-blue');
+        console.log(makeBlueButton);
+
+        makeBlueButton.onclick = makeBlue;
+        function makeBlue(){
+            document.body.style.backgroundColor = 'blue';
+        }
+
+        // which event we use : 
+        document.getElementById('make-golderrod').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'goldenrod';
+        })
+    </script>
+</body>
+</html>
